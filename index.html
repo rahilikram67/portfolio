@@ -159,12 +159,12 @@
             <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Get in Touch</h2>
             <div class="text-center text-lg text-gray-700">
                 <p class="mb-4">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
-                <p class="mb-2"><i class="fas fa-envelope text-blue-600 mr-2"></i> Email: <a href="mailto:rahil.ikram@example.com" class="text-blue-600 hover:underline">rahil.ikram@example.com</a></p>
-                <p class="mb-2"><i class="fab fa-linkedin text-blue-600 mr-2"></i> LinkedIn: <a href="https://linkedin.com/in/rahilikram" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/rahilikram</a></p>
-                <p class="mb-2"><i class="fab fa-github text-blue-600 mr-2"></i> GitHub: <a href="https://github.com/rahilikram" target="_blank" class="text-blue-600 hover:underline">github.com/rahilikram</a></p>
+                <p class="mb-2"><i class="fas fa-envelope text-blue-600 mr-2"></i> Email: <a href="mailto:rahil.ikram@example.com" class="text-blue-600 hover:underline">rahil.ikram@gmail.com</a></p>
+                <p class="mb-2"><i class="fab fa-linkedin text-blue-600 mr-2"></i> LinkedIn: <a href="https://linkedin.com/in/rahil-ikram" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/rahilikram</a></p>
+                <p class="mb-2"><i class="fab fa-github text-blue-600 mr-2"></i> GitHub: <a href="https://github.com/rahilikram67" target="_blank" class="text-blue-600 hover:underline">github.com/rahilikram</a></p>
                 <p class="mt-6 text-gray-600">Or send me a message directly:</p>
                 
-                <form class="mt-4 max-w-md mx-auto space-y-4" target="_blank" action="https://formsubmit.co/rahil.ikram67@gmail.com" method="POST">
+                <form onsubmit="clearFields()" class="mt-4 max-w-md mx-auto space-y-4" target="_blank" action="https://formsubmit.co/rahil.ikram67@gmail.com" method="POST">
                     <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <textarea placeholder="Your Message" name="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
@@ -173,7 +173,18 @@
             </div>
         </section>
 
+        <script>
+            function clearFields(){
+                document.getElementsByName('name')[0].value = ''
+                document.getElementsByName('email')[0].value = ''
+                document.getElementsByName('message')[0].value = ''
+            }
+        </script>
+
     </main>
+
+
+
 
     <!-- Scroll to Top Button -->
     <button id="scrollToTopBtn" class="fixed bottom-8 right-8 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
