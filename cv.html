@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahil Ikram - Curriculum Vitae</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light background for the overall page */
+            color: #2d3748;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .cv-page {
+            background-color: #ffffff; /* White background to mimic a paper document */
+            width: 100%;
+            max-width: 8.5in; /* Standard letter paper width (approx 8.5 inches) */
+            min-height: 11in; /* Standard letter paper height (approx 11 inches) */
+            padding: 1in; /* Standard margins for a document */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            border-radius: 8px; /* Slightly rounded corners for a modern touch */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+        /* Styles for print */
+        @media print {
+            body {
+                background-color: #ffffff; /* Ensure white background when printing */
+                padding: 0;
+                margin: 0;
+            }
+            .cv-page {
+                box-shadow: none; /* Remove shadow when printing */
+                border-radius: 0; /* Remove border-radius when printing */
+                width: 100%;
+                max-width: none;
+                min-height: auto;
+                padding: 1in;
+            }
+            .no-print {
+                display: none !important; /* Hide download button when printing */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Download PDF Button -->
+    <div class="no-print mb-8">
+        <button id="downloadPdfBtn" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center">
+            <i class="fas fa-file-pdf mr-2 text-xl"></i> Download CV as PDF
+        </button>
+    </div>
+
+    <!-- CV Content Area -->
+    <div id="cv-content" class="cv-page">
+
+        <!-- Header - Name and Contact Information -->
+        <header class="text-center mb-10 border-b-2 border-gray-300 pb-4">
+            <h1 class="text-5xl font-extrabold text-blue-800 mb-2">Rahil Ikram</h1>
+            <p class="text-xl text-gray-700 mb-1">Fullstack Developer with DevOps Experience</p>
+            <div class="text-md text-gray-600 flex flex-wrap justify-center gap-x-4 gap-y-1">
+                <span class="flex items-center"><i class="fas fa-envelope mr-2 text-blue-600"></i>rahil.ikram@example.com</span>
+                <span class="flex items-center"><i class="fas fa-phone mr-2 text-blue-600"></i>+971 50 123 4567</span> <!-- Example UAE number -->
+                <a href="https://linkedin.com/in/rahilikram" target="_blank" class="flex items-center text-blue-600 hover:underline"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+                <a href="https://github.com/rahilikram" target="_blank" class="flex items-center text-blue-600 hover:underline"><i class="fab fa-github mr-2"></i>GitHub</a>
+                <span class="flex items-center"><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>Dubai, UAE</span>
+            </div>
+        </header>
+
+        <!-- Summary Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-blue-700 border-b border-gray-300 pb-2 mb-4">Summary</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Highly motivated and results-driven Fullstack Developer with 3 years of onsite experience at Emallates, Dubai, UAE, and a proven track record as a successful freelancer on platforms like Fiverr and Upwork. Possessing strong expertise in both frontend and backend technologies, coupled with robust DevOps skills (Kubernetes, Git, Jenkins). An agile, adaptive learner and complex problem solver, dedicated to building scalable, efficient, and high-quality software solutions.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-blue-700 border-b border-gray-300 pb-2 mb-4">Experience</h2>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-800">Onsite Developer</h3>
+                <p class="text-blue-600 text-lg">Emallates, Dubai, UAE</p>
+                <p class="text-gray-600 mb-2">January 2022 – Present (3 Years)</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Developed and maintained fullstack web applications using modern frameworks and technologies.</li>
+                    <li>Implemented and managed CI/CD pipelines with Jenkins and Git, significantly improving deployment efficiency.</li>
+                    <li>Collaborated closely with product managers and designers to translate requirements into technical specifications and deliver user-centric solutions.</li>
+                    <li>Contributed to architectural discussions and performed code reviews, ensuring high code quality and adherence to best practices.</li>
+                    <li>Managed and optimized cloud infrastructure on AWS, enhancing application scalability and performance.</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800">Freelance Fullstack Developer</h3>
+                <p class="text-blue-600 text-lg">Fiverr & Upwork</p>
+                <p class="text-gray-600 mb-2">2020 – 2022</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Successfully delivered over 50 diverse web development projects, ranging from e-commerce sites to custom web applications.</li>
+                    <li>Managed end-to-end project lifecycles, including client communication, requirement gathering, development, testing, and deployment.</li>
+                    <li>Provided technical consultation and ongoing support, building strong client relationships and ensuring satisfaction.</li>
+                    <li>Adapted quickly to new technologies and client-specific requirements, demonstrating versatility and problem-solving skills.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-blue-700 border-b border-gray-300 pb-2 mb-4">Skills & Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-gray-700">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2"><i class="fas fa-code text-blue-600 mr-2"></i>Fullstack Development</h3>
+                    <ul class="list-none space-y-1">
+                        <li><span class="font-medium flex items-center"><i class="fab fa-html5 text-orange-500 mr-2"></i>Frontend:</span> HTML5, CSS3 (Tailwind CSS, Bootstrap), JavaScript (ES6+)</li>
+                        <li><span class="font-medium flex items-center"><i class="fab fa-react text-blue-500 mr-2"></i>Frameworks/Libraries:</span> React.js, Vue.js, Angular, jQuery</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-server text-gray-600 mr-2"></i>Backend:</span> Node.js (Express.js), Python (Django, Flask), Java (Spring Boot), PHP (Laravel)</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-database text-purple-600 mr-2"></i>Databases:</span> PostgreSQL, MySQL, MongoDB, Firebase Firestore, Redis</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-exchange-alt text-green-600 mr-2"></i>APIs:</span> RESTful APIs, GraphQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2"><i class="fas fa-cloud text-green-600 mr-2"></i>DevOps & Cloud</h3>
+                    <ul class="list-none space-y-1">
+                        <li><span class="font-medium flex items-center"><i class="fab fa-docker text-blue-700 mr-2"></i>Containerization:</span> Docker, Kubernetes (Kube), Docker Compose</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-cogs text-gray-700 mr-2"></i>CI/CD:</span> Jenkins, GitHub Actions, GitLab CI/CD, Travis CI</li>
+                        <li><span class="font-medium flex items-center"><i class="fab fa-git-alt text-red-600 mr-2"></i>Version Control:</span> Git, GitHub, GitLab, Bitbucket</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-cloud-upload-alt text-blue-500 mr-2"></i>Cloud Platforms:</span> AWS (EC2, S3, Lambda, RDS), Azure, Google Cloud Platform (GCP)</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-code-branch text-purple-700 mr-2"></i>Infrastructure as Code:</span> Terraform, Ansible</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-chart-line text-teal-600 mr-2"></i>Monitoring:</span> Prometheus, Grafana, ELK Stack</li>
+                    </ul>
+                </div>
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2"><i class="fas fa-tools text-purple-600 mr-2"></i>Tools & Methodologies</h3>
+                    <ul class="list-none grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-1">
+                        <li><span class="font-medium flex items-center"><i class="fas fa-project-diagram text-orange-500 mr-2"></i>Project Management:</span> Agile, Scrum, Kanban</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-vial text-green-700 mr-2"></i>Testing:</span> Unit Testing (Jest, Pytest), Integration Testing, E2E Testing (Cypress, Selenium)</li>
+                        <li><span class="font-medium flex items-center"><i class="fab fa-linux text-gray-800 mr-2"></i>Operating Systems:</span> Linux (Ubuntu, CentOS), Windows Server</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-network-wired text-blue-800 mr-2"></i>Networking Basics:</span> DNS, HTTP/S, Load Balancing</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-handshake text-pink-600 mr-2"></i>Soft Skills:</span> Adaptive Learner, Complex Problem Solver, Team Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section (Placeholder) -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-blue-700 border-b border-gray-300 pb-2 mb-4">Education</h2>
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Bachelor of Science in Computer Science</h3>
+                <p class="text-blue-600 text-lg">University Name, City, Country</p>
+                <p class="text-gray-600">Graduated: May 2020</p>
+            </div>
+        </section>
+
+        <!-- Certifications (Placeholder) -->
+        <section>
+            <h2 class="text-2xl font-bold text-blue-700 border-b border-gray-300 pb-2 mb-4">Certifications</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>AWS Certified Solutions Architect – Associate</li>
+                <li>Certified Kubernetes Administrator (CKA)</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- html2pdf.js CDN for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        document.getElementById('downloadPdfBtn').addEventListener('click', function() {
+            const element = document.getElementById('cv-content');
+            html2pdf(element, {
+                margin: 0.5,
+                filename: 'Rahil_Ikram_CV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, logging: true, dpi: 192, letterRendering: true },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            });
+        });
+    </script>
+
+</body>
+</html>
