@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahil Ikram - Fullstack & DevOps Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons (e.g., scroll-to-top arrow) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom scroll-behavior for older browsers, modern browsers use scroll-smooth class */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Lighter blue-gray background */
+            color: #2d3748; /* Darker text color for better contrast */
+        }
+        .section-padding {
+            padding: 80px 20px; /* Ample padding for sections */
+        }
+        /* Custom styling for active navigation link */
+        .nav-link.active {
+            font-weight: bold;
+            color: #1a73e8; /* Google Blue for active link */
+            border-bottom: 2px solid #1a73e8;
+        }
+        /* Hide scroll-to-top button by default */
+        #scrollToTopBtn {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-gradient-to-r from-blue-700 to-blue-900 shadow-xl z-50 p-4">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold text-white mb-2 md:mb-0">Rahil Ikram</h1>
+            <ul class="flex space-x-4 sm:space-x-6 md:space-x-8 text-lg">
+                <li><a href="#about" class="nav-link text-blue-100 hover:text-white transition duration-300 ease-in-out rounded-md p-2">About</a></li>
+                <li><a href="#skills" class="nav-link text-blue-100 hover:text-white transition duration-300 ease-in-out rounded-md p-2">Skills</a></li>
+                <li><a href="#experience" class="nav-link text-blue-100 hover:text-white transition duration-300 ease-in-out rounded-md p-2">Experience</a></li>
+                <li><a href="#portfolio" class="nav-link text-blue-100 hover:text-white transition duration-300 ease-in-out rounded-md p-2">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link text-blue-100 hover:text-white transition duration-300 ease-in-out rounded-md p-2">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-20"> <!-- Padding to prevent content from being hidden by fixed header -->
+
+        <!-- About Me Section -->
+        <section id="about" class="section-padding bg-gradient-to-br from-blue-50 to-blue-100 shadow-lg rounded-lg mx-auto max-w-4xl mt-8 p-6 md:p-10 border border-blue-200">
+            <div class="text-center">
+                <img src="https://placehold.co/150x150/A7C7E7/000000?text=RI" alt="Rahil Ikram" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-blue-600 shadow-xl">
+                <h2 class="text-4xl font-extrabold text-blue-800 mb-4">About Me</h2>
+                <p class="text-lg leading-relaxed text-gray-700 max-w-2xl mx-auto">
+                    My name is <span class="font-semibold text-blue-700">Rahil Ikram</span>, and I am a passionate <span class="font-semibold text-blue-700">Fullstack Developer</span> with extensive <span class="font-semibold text-blue-700">DevOps experience</span>. I thrive on solving complex problems and am an agile, adaptive learner. My expertise spans across various technologies, enabling me to build robust and scalable solutions from front to back.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding bg-gradient-to-br from-gray-50 to-gray-100 shadow-lg rounded-lg mx-auto max-w-4xl mt-8 p-6 md:p-10 border border-gray-200">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">My Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-blue-100">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3"><i class="fas fa-code text-blue-600 mr-2"></i>Fullstack Development</h3>
+                    <ul class="list-none text-gray-700 space-y-2">
+                        <li><span class="font-medium flex items-center"><i class="fab fa-html5 text-orange-500 mr-2"></i>Frontend:</span> HTML5, CSS3 (Tailwind CSS, Bootstrap), JavaScript (ES6+)</li>
+                        <li><span class="font-medium flex items-center"><i class="fab fa-react text-blue-500 mr-2"></i>Frameworks/Libraries:</span> React.js, Vue.js, Angular, jQuery</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-server text-gray-600 mr-2"></i>Backend:</span> Node.js (Express.js), Python (Django, Flask), Java (Spring Boot), PHP (Laravel)</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-database text-purple-600 mr-2"></i>Databases:</span> PostgreSQL, MySQL, MongoDB, Firebase Firestore, Redis</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-exchange-alt text-green-600 mr-2"></i>APIs:</span> RESTful APIs, GraphQL</li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-green-100">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3"><i class="fas fa-cloud text-green-600 mr-2"></i>DevOps & Cloud</h3>
+                    <ul class="list-none text-gray-700 space-y-2">
+                        <li><span class="font-medium flex items-center"><i class="fab fa-docker text-blue-700 mr-2"></i>Containerization:</span> Docker, Kubernetes (Kube), Docker Compose</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-cogs text-gray-700 mr-2"></i>CI/CD:</span> Jenkins, GitHub Actions, GitLab CI/CD, Travis CI</li>
+                        <li><span class="font-medium flex items-center"><i class="fab fa-git-alt text-red-600 mr-2"></i>Version Control:</span> Git, GitHub, GitLab, Bitbucket</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-cloud-upload-alt text-blue-500 mr-2"></i>Cloud Platforms:</span> AWS (EC2, S3, Lambda, RDS), Azure, Google Cloud Platform (GCP)</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-code-branch text-purple-700 mr-2"></i>Infrastructure as Code:</span> Terraform, Ansible</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-chart-line text-teal-600 mr-2"></i>Monitoring:</span> Prometheus, Grafana, ELK Stack</li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-purple-100">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3"><i class="fas fa-tools text-purple-600 mr-2"></i>Tools & Methodologies</h3>
+                    <ul class="list-none text-gray-700 space-y-2">
+                        <li><span class="font-medium flex items-center"><i class="fas fa-project-diagram text-orange-500 mr-2"></i>Project Management:</span> Agile, Scrum, Kanban</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-vial text-green-700 mr-2"></i>Testing:</span> Unit Testing (Jest, Pytest), Integration Testing, E2E Testing (Cypress, Selenium)</li>
+                        <li><span class="font-medium flex items-center"><i class="fab fa-linux text-gray-800 mr-2"></i>Operating Systems:</span> Linux (Ubuntu, CentOS), Windows Server</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-network-wired text-blue-800 mr-2"></i>Networking Basics:</span> DNS, HTTP/S, Load Balancing</li>
+                        <li><span class="font-medium flex items-center"><i class="fas fa-handshake text-pink-600 mr-2"></i>Soft Skills:</span> Adaptive Learner, Complex Problem Solver, Team Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section-padding bg-gradient-to-br from-blue-50 to-blue-100 shadow-lg rounded-lg mx-auto max-w-4xl mt-8 p-6 md:p-10 border border-blue-200">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Experience</h2>
+            <div class="space-y-8">
+                <div class="bg-yellow-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-yellow-100">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Onsite Developer</h3>
+                    <p class="text-blue-600 text-lg mb-2">Emallates, Dubai, UAE</p>
+                    <p class="text-gray-600 mb-3">3 Years Experience</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Developed and maintained fullstack applications for various business units.</li>
+                        <li>Implemented DevOps practices to streamline development and deployment pipelines.</li>
+                        <li>Collaborated with cross-functional teams to deliver high-quality software solutions.</li>
+                        <li>Contributed to architectural design and code reviews.</li>
+                    </ul>
+                </div>
+                <div class="bg-pink-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-pink-100">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Freelance Fullstack Developer</h3>
+                    <p class="text-blue-600 text-lg mb-2">Fiverr & Upwork</p>
+                    <p class="text-gray-600 mb-3">Independent Contractor</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Successfully completed numerous web development projects for diverse clients globally.</li>
+                        <li>Managed project lifecycles from requirement gathering to deployment.</li>
+                        <li>Provided technical consultation and support to clients.</li>
+                        <li>Gained extensive experience in adapting to various project requirements and technologies.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section-padding bg-gradient-to-br from-gray-50 to-gray-100 shadow-lg rounded-lg mx-auto max-w-4xl mt-8 p-6 md:p-10 border border-gray-200">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">My Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-teal-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-teal-100">
+                    <img src="https://placehold.co/400x250/B3D9FF/000000?text=Project+1" alt="E-commerce Platform" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">E-commerce Platform</h3>
+                    <p class="text-gray-700 mb-4">A fullstack e-commerce solution with user authentication, product management, and secure payment gateway integration.</p>
+                    <a href="#" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300 shadow-md">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-orange-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-orange-100">
+                    <img src="https://placehold.co/400x250/B3D9FF/000000?text=Project+2" alt="Real-time Chat Application" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Real-time Chat Application</h3>
+                    <p class="text-gray-700 mb-4">A real-time chat application built with WebSockets, featuring user presence and message history.</p>
+                    <a href="#" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300 shadow-md">View Project</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-gray-600">More projects coming soon!</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding bg-gradient-to-br from-blue-50 to-blue-100 shadow-lg rounded-lg mx-auto max-w-4xl mt-8 p-6 md:p-10 mb-8 border border-blue-200">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Get in Touch</h2>
+            <div class="text-center text-lg text-gray-700">
+                <p class="mb-4">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <p class="mb-2"><i class="fas fa-envelope text-blue-600 mr-2"></i> Email: <a href="mailto:rahil.ikram@example.com" class="text-blue-600 hover:underline">rahil.ikram@example.com</a></p>
+                <p class="mb-2"><i class="fab fa-linkedin text-blue-600 mr-2"></i> LinkedIn: <a href="https://linkedin.com/in/rahilikram" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/rahilikram</a></p>
+                <p class="mb-2"><i class="fab fa-github text-blue-600 mr-2"></i> GitHub: <a href="https://github.com/rahilikram" target="_blank" class="text-blue-600 hover:underline">github.com/rahilikram</a></p>
+                <p class="mt-6 text-gray-600">Or send me a message directly:</p>
+                <form class="mt-4 max-w-md mx-auto space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <textarea placeholder="Your Message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition duration-300 font-semibold shadow-lg">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+            // Function to handle smooth scrolling for navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent default anchor behavior
+                    const targetId = this.getAttribute('href').substring(1); // Get target section ID
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        // Scroll to the target section smoothly
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+
+                        // Optional: Highlight active navigation link
+                        navLinks.forEach(nav => nav.classList.remove('active'));
+                        this.classList.add('active');
+                    }
+                });
+            });
+
+            // Show/hide scroll to top button based on scroll position
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) { // Show button after scrolling 300px
+                    scrollToTopBtn.style.display = 'block';
+                } else {
+                    scrollToTopBtn.style.display = 'none';
+                }
+            });
+
+            // Scroll to top when button is clicked
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
