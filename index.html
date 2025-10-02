@@ -268,7 +268,9 @@
 
         <script>
             function clearFields() {
-                document.querySelector("#contact-form").reset()
+                setTimeout(()=>{
+                   document.querySelector("#contact-form").reset()    
+                },2000)
             }
         </script>
 
